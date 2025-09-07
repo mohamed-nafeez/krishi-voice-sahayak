@@ -1,4 +1,13 @@
-# Welcome to your Lovable project
+# Uzhav - Voice-powered Agriculture Assistant
+
+**Uzhav** is a comprehensive voice-powered agriculture assistant that helps farmers with weather information, plant cultivation timelines, and agricultural guidance in multiple Indian languages.
+
+## Features
+
+🌾 **Plant Cultivation Timeline** - Step-by-step growing guides for major crops (Tomato, Wheat, Rice)
+🌤️ **Weather Information** - Current weather and forecasts with location detection
+🎤 **Multi-language Voice Support** - Supports 13+ Indian languages with auto-detection
+📱 **Responsive Design** - Works seamlessly on mobile and desktop devices
 
 ## Project info
 
