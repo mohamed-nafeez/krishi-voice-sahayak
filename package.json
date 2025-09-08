@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node server.js",
-    "dev:full": "concurrently \"npm run server\" \"npm run dev\""
+    "dev:full": "concurrently \"npm run server\" \"npm run dev\"",
+    "security:setup": "bash setup-security.sh",
+    "security:audit": "npm audit && echo 'Review SECURITY.md for additional security measures'"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -53,6 +55,9 @@
     "dotenv": "^17.2.2",
     "embla-carousel-react": "^8.6.0",
     "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.462.0",
     "next-themes": "^0.3.0",

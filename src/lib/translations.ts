@@ -21,7 +21,24 @@ export type TranslationKey =
   | 'language.label'
   | 'notFound.title'
   | 'notFound.message'
-  | 'notFound.returnHome';
+  | 'notFound.returnHome'
+  | 'plant.title'
+  | 'plant.subtitle'
+  | 'plant.searchPlaceholder'
+  | 'plant.cultivationTimeline'
+  | 'plant.noDataFound'
+  | 'plant.noDataMessage'
+  | 'plant.startSearching'
+  | 'plant.startSearchingMessage'
+  | 'plant.weeks'
+  | 'plant.week'
+  | 'plant.difficulty.easy'
+  | 'plant.difficulty.medium'
+  | 'plant.difficulty.hard'
+  | 'plant.type.preparation'
+  | 'plant.type.sowing'
+  | 'plant.type.care'
+  | 'plant.type.harvest';
 
 export const translations: Record<LanguageCode, Record<TranslationKey, string>> = {
   'auto': {
@@ -36,7 +53,6 @@ export const translations: Record<LanguageCode, Record<TranslationKey, string>> 
     'features.soilHealth': 'Soil Health',
     'features.weather': 'Weather',
     'features.plantTimeline': 'Plant Timeline',
-    'features.plantTimeline': 'Plant Timeline',
     'features.marketPrices': 'Market Prices',
     'features.comingSoon': 'Coming soon',
     'errors.audio': 'Audio error',
@@ -46,43 +62,77 @@ export const translations: Record<LanguageCode, Record<TranslationKey, string>> 
     'language.label': 'Language',
     'notFound.title': 'Page Not Found',
     'notFound.message': 'Oops! Page not found',
-    'notFound.returnHome': 'Return to Home'
+    'notFound.returnHome': 'Return to Home',
+    'plant.title': 'Plant Cultivation Timeline',
+    'plant.subtitle': 'Discover step-by-step growing guides for your crops',
+    'plant.searchPlaceholder': 'Search for plants (e.g., Tomato, Wheat, Rice)...',
+    'plant.cultivationTimeline': 'Cultivation Timeline',
+    'plant.noDataFound': 'No data found for this plant',
+    'plant.noDataMessage': 'Please try another plant name. Available plants: Tomato, Wheat, Rice',
+    'plant.startSearching': 'Start by searching for a plant',
+    'plant.startSearchingMessage': 'Enter a plant name in the search bar above to see its cultivation timeline',
+    'plant.weeks': 'weeks',
+    'plant.week': 'Week',
+    'plant.difficulty.easy': 'Easy',
+    'plant.difficulty.medium': 'Medium',
+    'plant.difficulty.hard': 'Hard',
+    'plant.type.preparation': 'Preparation',
+    'plant.type.sowing': 'Sowing',
+    'plant.type.care': 'Care',
+    'plant.type.harvest': 'Harvest'
   },
-  'hi-IN': {
+    'hi-IN': {
     'app.title': 'Uzhav',
-    'app.subtitle': 'आवाज से कृषि सहायता',
-    'chat.empty': 'माइक्रोफोन दबाएं और अपना सवाल बोलें।',
+    'app.subtitle': 'आवाज से चालित कृषि सहायक',
+    'chat.empty': 'माइक्रोफोन दबाएं और अपना सवाल पूछें।',
     'chat.listening': 'सुन रहा हूं...',
     'chat.speaking': 'बोल रहा हूं...',
     'chat.speakPrompt': 'हिंदी में बोलें',
     'mic.start': 'सुनना शुरू करें',
     'mic.stop': 'सुनना बंद करें',
-    'features.soilHealth': 'मिट्टी की स्वास्थ्य',
+    'features.soilHealth': 'मिट्टी की सेहत',
     'features.weather': 'मौसम',
     'features.plantTimeline': 'पौधे की समयरेखा',
-    'features.marketPrices': 'बाजार भाव',
+    'features.marketPrices': 'बाजार दर',
     'features.comingSoon': 'जल्द आ रहा है',
     'errors.audio': 'ऑडियो त्रुटि',
     'errors.audioDescription': 'जवाब चलाने में असमर्थ',
     'errors.mic': 'माइक त्रुटि',
     'errors.micDescription': 'कृपया माइक्रोफोन की अनुमति दें',
     'language.label': 'भाषा',
-    'notFound.title': 'पृष्ठ नहीं मिला',
-    'notFound.message': 'क्षमा करें! यह पृष्ठ उपलब्ध नहीं है',
-    'notFound.returnHome': 'मुख्य पृष्ठ पर वापस जाएं'
+    'notFound.title': 'पेज नहीं मिला',
+    'notFound.message': 'माफ करें! यह पेज उपलब्ध नहीं है',
+    'notFound.returnHome': 'होम पेज पर वापस जाएं',
+    'plant.title': 'पौधे की खेती की समयरेखा',
+    'plant.subtitle': 'अपनी फसलों के लिए चरणबद्ध गाइड खोजें',
+    'plant.searchPlaceholder': 'पौधे खोजें (जैसे टमाटर, गेहूं, चावल)...',
+    'plant.cultivationTimeline': 'खेती की समयरेखा',
+    'plant.noDataFound': 'इस पौधे का डेटा नहीं मिला',
+    'plant.noDataMessage': 'कृपया दूसरा पौधा नाम आजमाएं। उपलब्ध पौधे: टमाटर, गेहूं, चावल',
+    'plant.startSearching': 'पौधा खोजकर शुरू करें',
+    'plant.startSearchingMessage': 'खेती की समयरेखा देखने के लिए ऊपर सर्च बार में पौधे का नाम डालें',
+    'plant.weeks': 'सप्ताह',
+    'plant.week': 'सप्ताह',
+    'plant.difficulty.easy': 'आसान',
+    'plant.difficulty.medium': 'मध्यम',
+    'plant.difficulty.hard': 'कठिन',
+    'plant.type.preparation': 'तैयारी',
+    'plant.type.sowing': 'बुआई',
+    'plant.type.care': 'देखभाल',
+    'plant.type.harvest': 'कटाई'
   },
-  'ta-IN': {
+    'ta-IN': {
     'app.title': 'Uzhav',
-    'app.subtitle': 'குரல் மூலம் விவசாய உதவி',
+    'app.subtitle': 'குரல் ஆதரவு விவசாய உதவியாளர்',
     'chat.empty': 'மைக்ரோஃபோனை அழுத்தி உங்கள் கேள்வியைக் கேளுங்கள்.',
-    'chat.listening': 'கேட்டுக்கொண்டிருக்கிறேன்...',
-    'chat.speaking': 'பேசிக்கொண்டிருக்கிறேன்...',
+    'chat.listening': 'கேட்டுக் கொண்டிருக்கிறேன்...',
+    'chat.speaking': 'பேசிக் கொண்டிருக்கிறேன்...',
     'chat.speakPrompt': 'தமிழில் பேசுங்கள்',
     'mic.start': 'கேட்க ஆரம்பிக்கவும்',
     'mic.stop': 'கேட்பதை நிறுத்தவும்',
     'features.soilHealth': 'மண் ஆரோக்கியம்',
     'features.weather': 'வானிலை',
-    'features.plantTimeline': 'Plant Timeline',
+    'features.plantTimeline': 'பயிர் காலவரிசை',
     'features.marketPrices': 'சந்தை விலை',
     'features.comingSoon': 'விரைவில் வருகிறது',
     'errors.audio': 'ஆடியோ பிழை',
@@ -92,7 +142,24 @@ export const translations: Record<LanguageCode, Record<TranslationKey, string>> 
     'language.label': 'மொழி',
     'notFound.title': 'பக்கம் கிடைக்கவில்லை',
     'notFound.message': 'மன்னிக்கவும்! இந்தப் பக்கம் கிடைக்கவில்லை',
-    'notFound.returnHome': 'முகப்புப் பக்கத்திற்குத் திரும்பு'
+    'notFound.returnHome': 'முகப்புப் பக்கத்திற்குத் திரும்பு',
+    'plant.title': 'பயிர் வளர்ப்பு காலவரிசை',
+    'plant.subtitle': 'உங்கள் பயிர்களுக்கான படிப்படியான வளர்ப்பு வழிகாட்டிகளைக் கண்டறியுங்கள்',
+    'plant.searchPlaceholder': 'பயிர்களைத் தேடுங்கள் (எ.கா: தக்காளி, கோதுமை, நெல்)...',
+    'plant.cultivationTimeline': 'வளர்ப்பு காலவரிசை',
+    'plant.noDataFound': 'இந்த பயிருக்கான தரவு கிடைக்கவில்லை',
+    'plant.noDataMessage': 'தயவுசெய்து வேறு பயிர் பெயரை முயற்சிக்கவும். கிடைக்கும் பயிர்கள்: தக்காளி, கோதுமை, நெல்',
+    'plant.startSearching': 'பயிரைத் தேடுவதன் மூலம் ஆரம்பிக்கவும்',
+    'plant.startSearchingMessage': 'வளர்ப்பு காலவரிசையைப் பார்க்க மேலே உள்ள தேடல் பட்டியில் பயிர் பெயரை உள்ளிடவும்',
+    'plant.weeks': 'வாரங்கள்',
+    'plant.week': 'வாரம்',
+    'plant.difficulty.easy': 'எளிதானது',
+    'plant.difficulty.medium': 'நடுத்தரம்',
+    'plant.difficulty.hard': 'கடினம்',
+    'plant.type.preparation': 'தயாரிப்பு',
+    'plant.type.sowing': 'விதைப்பு',
+    'plant.type.care': 'பராமரிப்பு',
+    'plant.type.harvest': 'அறுவடை'
   },
   'te-IN': {
     'app.title': 'Uzhav',
@@ -115,7 +182,24 @@ export const translations: Record<LanguageCode, Record<TranslationKey, string>> 
     'language.label': 'భాష',
     'notFound.title': 'పేజీ దొరకలేదు',
     'notFound.message': 'క్షమించండి! ఈ పేజీ అందుబాటులో లేదు',
-    'notFound.returnHome': 'హోమ్ పేజీకి తిరిగి వెళ్ళండి'
+    'notFound.returnHome': 'హోమ్ పేజీకి తిరిగి వెళ్ళండి',
+    'plant.title': 'Plant Cultivation Timeline',
+    'plant.subtitle': 'Discover step-by-step growing guides for your crops',
+    'plant.searchPlaceholder': 'Search for plants (e.g., Tomato, Wheat, Rice)...',
+    'plant.cultivationTimeline': 'Cultivation Timeline',
+    'plant.noDataFound': 'No data found for this plant',
+    'plant.noDataMessage': 'Please try another plant name. Available plants: Tomato, Wheat, Rice',
+    'plant.startSearching': 'Start by searching for a plant',
+    'plant.startSearchingMessage': 'Enter a plant name in the search bar above to see its cultivation timeline',
+    'plant.weeks': 'weeks',
+    'plant.week': 'Week',
+    'plant.difficulty.easy': 'Easy',
+    'plant.difficulty.medium': 'Medium',
+    'plant.difficulty.hard': 'Hard',
+    'plant.type.preparation': 'Preparation',
+    'plant.type.sowing': 'Sowing',
+    'plant.type.care': 'Care',
+    'plant.type.harvest': 'Harvest'
   },
   'en-IN': {
     'app.title': 'Uzhav',
@@ -138,7 +222,24 @@ export const translations: Record<LanguageCode, Record<TranslationKey, string>> 
     'language.label': 'Language',
     'notFound.title': 'Page Not Found',
     'notFound.message': 'Oops! Page not found',
-    'notFound.returnHome': 'Return to Home'
+    'notFound.returnHome': 'Return to Home',
+    'plant.title': 'Plant Cultivation Timeline',
+    'plant.subtitle': 'Discover step-by-step growing guides for your crops',
+    'plant.searchPlaceholder': 'Search for plants (e.g., Tomato, Wheat, Rice)...',
+    'plant.cultivationTimeline': 'Cultivation Timeline',
+    'plant.noDataFound': 'No data found for this plant',
+    'plant.noDataMessage': 'Please try another plant name. Available plants: Tomato, Wheat, Rice',
+    'plant.startSearching': 'Start by searching for a plant',
+    'plant.startSearchingMessage': 'Enter a plant name in the search bar above to see its cultivation timeline',
+    'plant.weeks': 'weeks',
+    'plant.week': 'Week',
+    'plant.difficulty.easy': 'Easy',
+    'plant.difficulty.medium': 'Medium',
+    'plant.difficulty.hard': 'Hard',
+    'plant.type.preparation': 'Preparation',
+    'plant.type.sowing': 'Sowing',
+    'plant.type.care': 'Care',
+    'plant.type.harvest': 'Harvest'
   },
   'bn-IN': {
     'app.title': 'Uzhav',
@@ -161,7 +262,24 @@ export const translations: Record<LanguageCode, Record<TranslationKey, string>> 
     'language.label': 'ভাষা',
     'notFound.title': 'পৃষ্ঠা পাওয়া যায়নি',
     'notFound.message': 'দুঃখিত! পৃষ্ঠা পাওয়া যায়নি',
-    'notFound.returnHome': 'হোমে ফিরে যান'
+    'notFound.returnHome': 'হোমে ফিরে যান',
+    'plant.title': 'Plant Cultivation Timeline',
+    'plant.subtitle': 'Discover step-by-step growing guides for your crops',
+    'plant.searchPlaceholder': 'Search for plants (e.g., Tomato, Wheat, Rice)...',
+    'plant.cultivationTimeline': 'Cultivation Timeline',
+    'plant.noDataFound': 'No data found for this plant',
+    'plant.noDataMessage': 'Please try another plant name. Available plants: Tomato, Wheat, Rice',
+    'plant.startSearching': 'Start by searching for a plant',
+    'plant.startSearchingMessage': 'Enter a plant name in the search bar above to see its cultivation timeline',
+    'plant.weeks': 'weeks',
+    'plant.week': 'Week',
+    'plant.difficulty.easy': 'Easy',
+    'plant.difficulty.medium': 'Medium',
+    'plant.difficulty.hard': 'Hard',
+    'plant.type.preparation': 'Preparation',
+    'plant.type.sowing': 'Sowing',
+    'plant.type.care': 'Care',
+    'plant.type.harvest': 'Harvest'
   },
   'gu-IN': {
     'app.title': 'Uzhav',
@@ -332,4 +450,8 @@ export function useTranslation(lang: LanguageCode) {
   };
 
   return { t };
+}
+
+export function translate(key: TranslationKey, lang: LanguageCode): string {
+  return translations[lang][key] || translations['en-IN'][key] || key;
 }

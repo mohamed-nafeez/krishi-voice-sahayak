@@ -234,10 +234,8 @@ const Index = () => {
               >
                 <card.icon className="text-foreground/80" />
                 <span className="text-sm md:text-base font-medium">{card.label}</span>
-                {card.isComingSoon ? (
+                {card.isComingSoon && (
                   <span className="text-xs text-muted-foreground">{t('features.comingSoon')}</span>
-                ) : (
-                  <span className="text-xs text-primary">Available now</span>
                 )}
               </article>
             ))}

@@ -342,7 +342,9 @@ const Weather = () => {
                         <MapPin className="h-5 w-5" />
                         {currentWeather.city}, {currentWeather.country}
                         {locationPermission === 'granted' && (
-                          <Navigation className="h-4 w-4 text-blue-500" title="Using your current location" />
+                          <span title="Using your current location">
+                            <Navigation className="h-4 w-4 text-blue-500" />
+                          </span>
                         )}
                       </CardTitle>
                       <CardDescription>{new Date().toLocaleDateString('en-US', {
