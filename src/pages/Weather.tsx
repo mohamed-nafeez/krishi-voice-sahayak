@@ -309,15 +309,6 @@ const Weather = () => {
               </p>
             </div>
           )}
-          
-          {/* Debug Info */}
-          <div className="mt-3 p-2 bg-gray-50 border rounded text-xs text-gray-600">
-            <p><strong>Debug:</strong> Location permission: {locationPermission || 'unknown'}</p>
-            <p>API Base URL: {API_BASE_URL}</p>
-            {currentWeather && (
-              <p>Current weather for: {currentWeather.city} ({currentWeather.coordinates?.lat}, {currentWeather.coordinates?.lon})</p>
-            )}
-          </div>
         </section>
 
         {error && (
